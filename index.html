@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Personal Homepage</title>
+    <title>Samuel dos Santos | WDD 130</title>
 </head>
-<body>
-    <h1>Welcome to WDD 130.</h1>
-    <p>This page will become your homepage for the course. You will remove this text and replace it with your own personal details.</p>
 
-    <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="wwr/">Rafting Website</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>
+            Samuel dos Santos | WDD 130
+        </h1>
+
+        <img src="/images/profile.jpeg" alt="Hello, my name is Samuel dos Santos" width="200">
+
+        <p>Hello everyone! My name is Samuel dos Santos. I am a Software Engineer who is passionate
+            about technology and always seeking new knowledge.</p>
+        <p>I'm married to a beautiful and lovable wife an we have 2 beautiful children.</p>
+        <p>My goal here in BYU-Idaho is to persue a Bachelor's degree and during this path, get
+            closer to our Savior, share and learn alot with my fellow brothers and sisters.</p>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span> ❤️ Samuel dos Santos - Espirito
+            Santo/Serra(Brazil)
+        </p>
+    </footer>
+
+    <!-- I've created a dynamic JS code snippet to inject the current year -->
+    <script>
+        const currentYear = new Date().getFullYear();
+        const el = document.getElementById('current-year');
+
+        el.innerHTML = currentYear;
+    </script>
 </body>
+
 </html>
