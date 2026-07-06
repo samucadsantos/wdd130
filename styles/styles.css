@@ -35,13 +35,6 @@ h1 {
     color: darkblue;
 }
 
-img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-}
-
 p {
     padding: 0;
 }
@@ -53,11 +46,15 @@ main {
 main img {
     width: 150px;
     height: auto;
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
 }
 
 aside {
     width: 20rem;
-    border: 1px solid rgb(0, 0, 0/ 0.2);
+    border: 1px solid rgb(0, 0, 0 / 0.2);
     margin: 1rem;
     padding: 1rem;
     background-color: #eee;
