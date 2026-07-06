@@ -43,5 +43,34 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+aside {
+    width: 20rem;
+    border: 1px solid rgb(0, 0, 0/ 0.2);
+    margin: 1rem;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    text-align: center;
+    color: #444;
+    font-size: .9rem;
 }
