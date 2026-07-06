@@ -48,7 +48,8 @@ main img {
     height: auto;
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 20px 30px 30px #ccc;
     padding: 2px;
 }
 
