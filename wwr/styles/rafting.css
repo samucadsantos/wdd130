@@ -1,15 +1,15 @@
 :root {
     --primary-color: #055a05;
     --secondary-color: #f4a261;
-    --accent-one-color: #264653;
-    --accent-two-color: #e9c46a;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
 ::selection {
-    background-color: var(--accent-two-color);
-    color: var(--accent-one-color);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
 }
 
 * {
@@ -20,7 +20,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent-one-color);
+    color: var(--accent1-color);
 }
 
 ul {
@@ -47,7 +47,7 @@ h1 {
     padding: 16px;
     text-align: center;
     opacity: .7;
-    background-color: var(--accent-one-color);
+    background-color: var(--accent1-color);
     color: #fff;
     text-transform: uppercase;
 }
@@ -71,19 +71,20 @@ article {
 .hero article {
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(to right, rgb(255 255 255 / 10%), var(--accent-one-color));
-    display: flex;
-    align-items: center;
+    background-image: linear-gradient(to left, rgb(255 255 255 / 10%), var(--accent1-color));
 }
 
 .hero article img {
     max-width: 125px;
     border-radius: 50%;
+    float: right;
+    padding-left: 20px;
 }
 
 .hero article p {
     font-weight: bold;
     color: #fff;
+    text-align: right;
 }
 
 .hero img {
