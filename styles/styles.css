@@ -43,7 +43,18 @@ main {
     max-width: 840px;
 }
 
-main img {
+main header {
+    padding: 20px;
+    max-width: 600px;
+}
+
+main header p {
+    font-size: .876rem;
+    line-height: 1.6;
+    color: #414141;
+}
+
+main header img {
     width: 150px;
     height: auto;
     width: 150px;
@@ -51,16 +62,26 @@ main img {
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: 20px 30px 30px #ccc;
     padding: 2px;
+    float: right;
+    clear: both;
 }
 
 aside {
     width: 20rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative
+}
+
+aside h2 {
+    position: absolute;
+    font-size: .876rem;
+    font-weight: normal;
+    left: 50%;
+    top: 30px;
+    translate: -50%;
+    background-color: rgb(0 0 0 /40%);
+    color: #fff;
+    padding: 8px;
 }
 
 aside img {
@@ -75,4 +96,13 @@ footer {
     text-align: center;
     color: #444;
     font-size: .9rem;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 /10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
