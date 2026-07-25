@@ -22,13 +22,18 @@ nav {
 
 nav > ul {
     display: flex;
+    justify-content: display-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 h1 {
@@ -39,13 +44,19 @@ p {
     padding: 0;
 }
 
-main {
+.grid,
+header,
+footer {
     max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    grid-column: 2/3;
 }
 
 main header {
     padding: 20px;
-    max-width: 600px;
 }
 
 main header p {
@@ -66,10 +77,18 @@ main header img {
     clear: both;
 }
 
+main header h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
 aside {
     width: 20rem;
     text-align: center;
-    position: relative
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside h2 {
@@ -105,4 +124,9 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
 }
