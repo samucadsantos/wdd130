@@ -157,7 +157,7 @@ article {
 }
 
 .history p {
-    color: #848484;
+    color: #666666;
     font-size: .876em;
 }
 
@@ -176,7 +176,6 @@ article {
 .adventurous figure {
     overflow: hidden;
     width: 100%;
-    height: 200xp;
 }
 
 .adventurous img {
