@@ -8,7 +8,7 @@
 }
 
 ::selection {
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     color: var(--accent1-color);
 }
 
