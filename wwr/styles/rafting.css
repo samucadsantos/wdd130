@@ -111,7 +111,7 @@ article {
 .hero article {
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(to left, var(--accent2-color), var(--accent1-color));
+    background-color: var(--accent1-color);
 }
 
 .hero article img {
