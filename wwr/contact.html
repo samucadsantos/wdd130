@@ -55,14 +55,28 @@
                     <input type="email" id="email" name="email"
                       placeholder="What is your best email">
                 </div>
-                <div class="form-input">
-                    <label for="purpose">Message purpose</label>
-                    <select id="purpose" name="purpose">
-                        <option value="" selected disabled>Choose one option below</option>
-                        <option value="general_inquire">General Inquire</option>
-                        <option value="reservation_question">Reservation Question</option>
-                        <option value="website_suggestion">Website Suggestion</option>
-                    </select>
+                <div class="form-input radio-group">
+                    <p class="label-heading">Message Purpose</p>
+
+                    <div class="radio-options">
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general_inquiry"
+                              checked>
+                            General Inquiry
+                        </label>
+
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose"
+                              value="reservation_question">
+                            Reservation Question
+                        </label>
+
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose"
+                              value="website_suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
                 </div>
                 <div class="form-input">
                     <label for="message">Message</label>
