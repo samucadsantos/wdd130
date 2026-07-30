@@ -1,0 +1,198 @@
+/* Mark the current page */
+.page-trips > header li:nth-child(3) a {
+    color: var(--accent1-color);
+}
+
+.page-trips .adventurous {
+    margin-top: 0;
+}
+
+.page-trips .adventurous > div {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.page-trips .adventurous h1 {
+    color: #212121;
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 10px;
+}
+
+.page-trips .adventurous p {
+    font-size: .9rem;
+    color: #646464;
+    margin-top: .1rem
+}
+
+.page-trips .adventurous ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .876em;
+}
+
+.page-trips .card-actions {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-trips .card-actions a {
+    background-color: var(--accent1-color);
+    padding: 6px 16px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    transition: all ease-in-out var(--default-transition-time);
+}
+
+.page-trips .card-actions a:hover {
+    background-color: var(--accent2-color);
+    color: #212121;
+}
+
+/* Table information */
+.table-info {
+    background-color: #eee;
+    padding: 80px 0
+}
+
+.table-info h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212121;
+}
+
+.table-info table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.table-info table th {
+    padding: 10px;
+    background-color: #646464;
+    color: white;
+    text-align: left;
+}
+
+.table-info table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-info table tbody tr:nth-child(odd) td {
+    background-color: #fff;
+}
+
+.table-info table td {
+    padding: 10px;
+    color: #646464;
+}
+
+/* Contact */
+.contact {
+    background-color: #fff;
+    padding: 120px 0;
+}
+
+.contact > .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-self: end;
+    gap: 80px;
+}
+
+.contact h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212121;
+    max-width: 500px;
+}
+
+.contact .cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.contact .cta-group > a {
+    margin-top: 20px;
+    background-color: var(--accent1-color);
+    padding: 12px 26px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    transition: all ease-in-out var(--default-transition-time);
+}
+
+.contact .cta-group > a:hover {
+    background-color: var(--accent2-color);
+    color: #212121;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 650px;
+    background: #fff url('../images/bg-hero-trips.jpg') center / cover no-repeat;
+}
+
+.hero:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+}
+
+.hero .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero header {
+    text-align: center;
+    color: #fff;
+}
+
+.hero header p {
+    font-size: 1.6em;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero a {
+    margin-top: 20px;
+    background-color: var(--accent1-color);
+    padding: 12px 26px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 25px;
+    transition: all ease-in-out var(--default-transition-time);
+}
+
+.hero a:hover {
+    background-color: var(--accent2-color);
+    color: #212121;
+}

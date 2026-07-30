@@ -1,93 +1,150 @@
-.socialmedia {
-    grid-column: 3;
-    justify-self: end;
-}
-
-.socialmedia a {
-    text-decoration: none;
+/* Mark the current page */
+.page-about > header li:nth-child(2) a {
+    color: var(--accent1-color);
 }
 
 .hero {
     position: relative;
+    height: 650px;
+    background: #fff url('../images/main-hero.svg') center / cover no-repeat;
 }
 
-.hero article {
+.hero:after {
+    content: '';
     position: absolute;
-    bottom: 0;
-    background-color: var(--accent1-color);
-}
-
-.hero article img {
-    max-width: 125px;
-    border-radius: 50%;
-    float: right;
-    padding-left: 20px;
-}
-
-.hero article p {
-    font-weight: bold;
-    color: #fff;
-    text-align: right;
-}
-
-.hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+}
+
+.hero .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero header {
+    text-align: center;
+    color: #fff;
+}
+
+.hero header p {
+    font-size: 1.6em;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* History section */
 .history {
-    padding: 0;
-    margin: 24px 0;
+    padding: 80px 0;
+    margin: 84px 0;
 }
 
 .history > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 80px;
     align-items: center;
+    gap: 120px;
 }
 
 .history img {
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
     margin: 0 auto;
+    border-radius: 100%;
+    border: 4px solid var(--accent2-color);
+    padding: 2px;
+}
+
+.history article h2 {
+    text-align: left;
+    font-size: 2.4rem;
 }
 
 .history h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212121;
 }
 
 .history p {
-    color: #666666;
-    font-size: .876em;
+    color: #848484;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 /* Adventurous section */
+.adventurous {
+    padding: 80px 0;
+    margin-top: 24px;
+    background-color: #f8f8f8;
+}
+
 .adventurous h2 {
+    text-transform: uppercase;
+    font-size: 4rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212121;
 }
 
 .adventurous > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 40px;
+    margin-top: 80px;
+    padding: 0 20px;
 }
 
 .adventurous figure {
     overflow: hidden;
     width: 100%;
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.adventurous figure:hover img {
+    transform: scale(1.5);
 }
 
 .adventurous img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all ease-in-out var(--default-transition-time);
 }
 
 .adventurous figcaption {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: var(--accent2-color);
+    color: #414141;
+    padding: 8px 12px;
     text-align: center;
-    font-size: .76em;
-    margin-top: 4px;
-    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all ease-in-out var(--default-transition-time);
+    border-radius: 25px;
+    font-size: .876em;
 }
