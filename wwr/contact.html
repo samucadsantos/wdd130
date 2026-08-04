@@ -14,36 +14,30 @@
     <link rel="stylesheet" href="styles/contact.css">
 </head>
 
-<body class="page-contact">
+<body>
     <header>
-        <div class="content">
-            <a href="index.html">
-                <img src="images/logo.svg" alt="White Water Rafting Company">
-            </a>
+        <img src="images/logo.jpg" alt="White Water Rafting Company">
 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="breadcrumb">
-        <nav class="content">
+        <nav>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <span>Contact</span>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     <main>
+        <address>
+            <div>
+                <p>White Water Rafting Company</p>
+                <p>123 main River Street</p>
+                <p>kolob, California</p>
+                <p>+1 999 999 9999</p>
+                <p><a href="http://www.example.com/contact">info@whitewater.com</a></p>
+            </div>
+        </address>
+
         <div class="contact">
             <div class="map">
                 <iframe
@@ -51,69 +45,54 @@
                   width="600" height="450" allowfullscreen="" loading="lazy"
                   referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
-            <div class="content">
-                <div class="info">
-                    <address>
-                        <div>
-                            <p>White Water Rafting Company</p>
-                            <p>123 main River Street</p>
-                            <p>kolob, California</p>
-                            <p>+1 999 999 9999</p>
-                            <p><a href="http://www.example.com/contact">info@whitewater.com</a></p>
-                        </div>
-                    </address>
-                    <form>
-                        <div class="form-input">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name"
-                              placeholder="What is your full name?">
-                        </div>
-                        <div class="form-input">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email"
-                              placeholder="What is your best email">
-                        </div>
-                        <div class="form-input radio-group">
-                            <p class="label-heading">Message Purpose</p>
-
-                            <div class="radio-options">
-                                <label for="general">
-                                    <input type="radio" id="general" name="purpose"
-                                      value="general_inquiry" checked>
-                                    General Inquiry
-                                </label>
-
-                                <label for="reservation">
-                                    <input type="radio" id="reservation" name="purpose"
-                                      value="reservation_question">
-                                    Reservation Question
-                                </label>
-
-                                <label for="suggestion">
-                                    <input type="radio" id="suggestion" name="purpose"
-                                      value="website_suggestion">
-                                    Website Suggestion
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-input">
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" rows="4"
-                              placeholder="Type your message here..."></textarea>
-                        </div>
-                        <div class="checkbox-group">
-                            <input type="checkbox" name="subscribe_newsletter"
-                              id="subscribe_newsletter">
-                            <label for="subscribe_newsletter">Please subscribe me to the monthly
-                                newsletter</label>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit">Get in Touch!</button>
-                        </div>
-                    </form>
+            <form>
+                <div class="form-input">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="What is your full name?">
                 </div>
-            </div>
+                <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                      placeholder="What is your best email">
+                </div>
+                <div class="form-input radio-group">
+                    <p class="label-heading">Message Purpose</p>
+
+                    <div class="radio-options">
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general_inquiry"
+                              checked>
+                            General Inquiry
+                        </label>
+
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose"
+                              value="reservation_question">
+                            Reservation Question
+                        </label>
+
+                        <label for="suggestion">
+                            <input type="radio" id="suggestion" name="purpose"
+                              value="website_suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"
+                      placeholder="Type your message here..."></textarea>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="subscribe_newsletter" id="subscribe_newsletter">
+                    <label for="subscribe_newsletter">Please subscribe me to the monthly
+                        newsletter</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Get in Touch!</button>
+                </div>
+            </form>
         </div>
 
         <section class="team">
@@ -121,50 +100,36 @@
 
             <ul>
                 <li>
-                    <figure>
-                        <img src="images/team/jennifer.jpg" alt="Jennifer Hayes">
-                        <figcaption>Jennifer Hayes</figcaption>
-                    </figure>
+                    <img src="images/team/jennifer.jpg"
+                      alt="Jennifer collaborator passionate about meeting people">
                 </li>
                 <li>
-                    <figure>
-                        <img src="images/team/eleonor.jpg" alt="Eleonor Vance">
-                        <figcaption>Eleonor Vance</figcaption>
-                    </figure>
+                    <img src="images/team/eleonor.jpg"
+                      alt="Eleonor love to connect people to their dream">
                 </li>
                 <li>
-                    <figure>
-                        <img src="images/team/phil.jpg" alt="Phil Bennet">
-                        <figcaption>Phil Bennet</figcaption>
-                    </figure>
+                    <img src="images/team/phil.jpg"
+                      alt="Phil is a successful entrepreneur in this business">
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-        <div class="content">
-            <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
+        <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <img src="images/icons/facebook.png" alt="Facebook Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                            <img src="images/icons/linkedin.png" alt="LinkedIn Icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                            <img src="images/icons/instagram.png" alt="Instagram Icon">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="socialmedia">
+            <ul>
+                <li><a href="https://facebook.com">
+                        <img src="images/facebook-icon.jpg" alt="Facebook Icon">
+                    </a></li>
+                <li><a href="https://linkedin.com">
+                        <img src="images/linkedin-icon.jpg" alt="LinkedIn Icon">
+                    </a></li>
+                <li><a href="https://instagram.com">
+                        <img src="images/instagram-icon.jpg" alt="Instagram Icon">
+                    </a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 
