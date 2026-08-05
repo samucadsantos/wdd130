@@ -117,15 +117,13 @@
 
 .adventurous figcaption {
     text-align: center;
-    font-size: .76em;
+    font-size: .876em;
     margin-top: 4px;
-    color: var(--primary-color);
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 10px;
-    text-align: center;
     background-color: var(--accent1-color);
     color: white;
     white-space: nowrap;
