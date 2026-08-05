@@ -223,16 +223,13 @@
 
 .newsletter header {
     text-align: center;
+    display: block;
 }
 
+.page-home .newsletter p,
 .newsletter h3 {
     color: #212121;
-    margin-bottom: 0;
-}
-
-.page-home .newsletter p {
-    color: #444;
-    margin-top: 0;
+    margin: 0;
 }
 
 .newsletter form {
@@ -247,6 +244,8 @@
 .newsletter .form-input {
     display: flex;
     flex-direction: column;
+    align-items: start;
+    margin: 0;
 }
 
 .newsletter .form-input label {
