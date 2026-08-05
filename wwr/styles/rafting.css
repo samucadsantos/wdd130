@@ -46,7 +46,6 @@
 
 .page-home > .hero h1 {
     position: absolute;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -140,7 +139,6 @@
     background-color: var(--accent1-color);
     padding: 12px 16px;
     color: #fff;
-    display: block;
     text-align: center;
     width: 100%;
     display: grid;
