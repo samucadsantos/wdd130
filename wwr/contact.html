@@ -14,20 +14,26 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Company">
+    <!-- Header section -->
+    <header class="navigation">
+        <div class="content gridded gridded-two grid-centered">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="White Water Rafting Company">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="page-contact">
-        <h1>White Water Rafting Company</h1>
+    <!-- Main section -->
+    <main class="content">
+        <h1 class="page-title uppercase centered space-bottom">White Water Rafting Company</h1>
 
         <address>
             <div>
@@ -38,13 +44,11 @@
             </div>
         </address>
 
-        <div class="contact">
-            <div class="map">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865244.0975352046!2d-116.7815144835616!3d45.46799212833759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2sbr!4v1785292422333!5m2!1sen!2sbr"
-                  width="600" height="450" allowfullscreen="" loading="lazy"
-                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
+        <div class="gridded gridded-two gapped-default space-top">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2865244.0975352046!2d-116.7815144835616!3d45.46799212833759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5358ffa885e499e9%3A0xd06b300515f78758!2sIdaho%2C%20USA!5e0!3m2!1sen!2sbr!4v1785292422333!5m2!1sen!2sbr"
+              width="600" height="450" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
             <form>
                 <div class="form-input">
                     <label for="name">Name</label>
@@ -89,31 +93,29 @@
                         newsletter</label>
                 </div>
 
-                <div class="form-actions">
-                    <button type="submit">Get in Touch!</button>
-                </div>
+                <button class="act-link full-width space-top" type="submit">Get in Touch!</button>
             </form>
         </div>
 
-        <section class="team">
-            <h2>We Are Here to Serve you</h2>
+        <section class="team space-top space-bottom">
+            <h2 class="page-title uppercase centered space-bottom">We Are Here to Serve you</h2>
 
-            <ul>
-                <li>
+            <ul class="flex between grid-centered gapped-small">
+                <li class="card">
                     <figure>
                         <img src="images/team/jennifer.jpg"
                           alt="Jennifer collaborator passionate about meeting people">
                         <figcaption>Jennifer - People Care</figcaption>
                     </figure>
                 </li>
-                <li>
+                <li class="card">
                     <figure>
                         <img src="images/team/eleonor.jpg"
                           alt="Eleonor love to connect people to their dream">
                         <figcaption>Eleonor - Psychologist</figcaption>
                     </figure>
                 </li>
-                <li>
+                <li class="card">
                     <figure>
                         <img src="images/team/phill.jpg"
                           alt="Phil is a successful entrepreneur in this business">
@@ -123,22 +125,25 @@
             </ul>
         </section>
     </main>
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
+        <div class="content gridded gridded-one padding-all">
+            <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
 
-        <nav class="socialmedia">
-            <ul>
-                <li><a href="https://facebook.com">
-                        <img src="images/facebook-icon.jpg" alt="Facebook Icon">
-                    </a></li>
-                <li><a href="https://linkedin.com">
-                        <img src="images/linkedin-icon.jpg" alt="LinkedIn Icon">
-                    </a></li>
-                <li><a href="https://instagram.com">
-                        <img src="images/instagram-icon.jpg" alt="Instagram Icon">
-                    </a></li>
-            </ul>
-        </nav>
+            <nav class="socialmedia">
+                <ul>
+                    <li><a href="https://facebook.com">
+                            <img src="images/icons/facebook.svg" alt="Facebook Icon">
+                        </a></li>
+                    <li><a href="https://linkedin.com">
+                            <img src="images/icons/linkedin.svg" alt="LinkedIn Icon">
+                        </a></li>
+                    <li><a href="https://instagram.com">
+                            <img src="images/icons/instagram.svg" alt="Instagram Icon">
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 

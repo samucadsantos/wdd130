@@ -16,64 +16,73 @@
 </head>
 
 <body id="page-home">
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Company">
+    <!-- Header section -->
+    <header class="navigation">
+        <div class="content gridded gridded-two grid-centered">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="White Water Rafting Company">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <!-- Main section -->
     <main class="page-home">
         <div class="hero">
             <div>
-                <img src="images/adventurous-4.jpg" alt="Life is short. Make it work =)">
-                <h1>Come live an adventure.</h1>
+                <figure>
+                    <img src="images/adventurous-4.jpg" alt="Life is short. Make it work =)">
+                </figure>
+                <h1 class="page-title white-color uppercase centered">Come live an adventure.</h1>
             </div>
         </div>
-        <section class="locations">
-            <h2>More than a feeling</h2>
+        <section class="padding-y-default">
+            <h2 class="page-title centered uppercase space-bottom">More than a feeling</h2>
 
-            <div class="content">
-                <div>
+            <div class="content gridded gridded-three gapped-default">
+                <div class="card">
                     <figure>
                         <img src="images/trips/camping.jpg" alt="">
                         <figcaption>Camping</figcaption>
                     </figure>
 
-                    <a href="trips.html">Book a trip now</a>
+                    <a class="act-link" href="trips.html">Book a trip now</a>
                 </div>
 
-                <div>
+                <div class="card">
                     <figure>
                         <img src="images/trips/rapid.jpg" alt="">
                         <figcaption>Rapids</figcaption>
                     </figure>
 
-                    <a href="trips.html">Book a trip now</a>
+                    <a class="act-link" href="trips.html">Book a trip now</a>
                 </div>
 
-                <div>
+                <div class="card">
                     <figure>
                         <img src="images/trips/river.jpg" alt="">
                         <figcaption>Rivers</figcaption>
                     </figure>
 
-                    <a href="trips.html">Book a trip now</a>
+                    <a class="act-link" href="trips.html">Book a trip now</a>
                 </div>
             </div>
         </section>
-        <div class="info">
-            <div class="content">
+        <div class="info space-top padding-y-default">
+            <div class="content gridded grid-centered">
                 <figure>
                     <img src="images/info.jpg" alt=">Bring more joy to your life">
                 </figure>
                 <article>
-                    <h2>Bring more joy to your life</h2>
+                    <h2 class="page-title centered uppercase space-bottom">Bring more joy to your
+                        life</h2>
                     <p>We are a mission driven company with one simple goal: Make our guests smile
                         :)
                         The more smiling the
@@ -87,13 +96,13 @@
                         just maybe, our
                         children's great-grandchildren will be smiling someday too.</p>
 
-                    <a href="trips.html">Book a trip now</a>
+                    <a class="act-link space-top" href="trips.html">Book a trip now</a>
                 </article>
             </div>
         </div>
-        <section class="newsletter">
-            <header>
-                <h3>Stay in the Loop</h3>
+        <section class="newsletter padding-y-default space-top">
+            <header class="centered">
+                <h3 class="page-title centered uppercase">Stay in the Loop</h3>
                 <p>Sign up for our newsletter!</p>
             </header>
             <form>
@@ -106,28 +115,30 @@
                     <input type="email" id="email" name="email"
                       placeholder="What is your best email">
                 </div>
-                <div class="">
-                    <button type="submit">Subscribe</button>
-                </div>
+
+                <button class="act-link" type="submit">Subscribe</button>
             </form>
         </section>
     </main>
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
+        <div class="content gridded gridded-one padding-all">
+            <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
 
-        <nav class="socialmedia">
-            <ul>
-                <li><a href="https://facebook.com">
-                        <img src="images/facebook-icon.jpg" alt="Facebook Icon">
-                    </a></li>
-                <li><a href="https://linkedin.com">
-                        <img src="images/linkedin-icon.jpg" alt="LinkedIn Icon">
-                    </a></li>
-                <li><a href="https://instagram.com">
-                        <img src="images/instagram-icon.jpg" alt="Instagram Icon">
-                    </a></li>
-            </ul>
-        </nav>
+            <nav class="socialmedia">
+                <ul>
+                    <li><a href="https://facebook.com">
+                            <img src="images/icons/facebook.svg" alt="Facebook Icon">
+                        </a></li>
+                    <li><a href="https://linkedin.com">
+                            <img src="images/icons/linkedin.svg" alt="LinkedIn Icon">
+                        </a></li>
+                    <li><a href="https://instagram.com">
+                            <img src="images/icons/instagram.svg" alt="Instagram Icon">
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 

@@ -14,39 +14,50 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/logo.jpg" alt="White Water Rafting Company">
+    <!-- Header section -->
+    <header class="navigation">
+        <div class="content gridded gridded-two grid-centered">
+            <a href="index.html">
+                <img class="logo" src="images/logo.jpg" alt="White Water Rafting Company">
+            </a>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="trips.html">Trips</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main class="page-about">
+    <!-- Main section -->
+    <main class="page-about content">
         <div class="hero">
-            <img src="images/bg-hero.jpg" alt="The best place to be adventurous with your family">
+            <h1 class="page-title uppercase white-color centered">White Water Rafting</h1>
 
-            <h1>White Water Rafting</h1>
+            <figure>
+                <img src="images/bg-hero.jpg"
+                  alt="The best place to be adventurous with your family">
+            </figure>
 
-            <article>
-                <img src="images/happy-client.jpg" alt="Happy Client">
+            <div class="testimonial">
+                <figure>
+                    <img src="images/team/jennifer.jpg" alt="Happy Client">
+                </figure>
 
                 <p>This is the best place to spend quality time and experience adventurous moments
                     with your family
                     during your vacation. We are dedicated to providing safe, thrilling, and
                     unforgettable outdoor
                     experiences for all ages.</p>
-            </article>
+            </div>
         </div>
 
-        <section class="history">
-            <h2>History</h2>
+        <section class="history padding-y-default">
+            <h2 class="page-title uppercase centered space-bottom">History</h2>
 
-            <div>
+            <div class="gridded gridded-three grid-center">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis in
                     nisi
                     eget posuere. In
@@ -79,53 +90,67 @@
             </div>
         </section>
 
-        <section class="adventurous">
-            <h2>Adventure Awaits You!</h2>
+        <section class="adventurous padding-y-default">
+            <h2 class="page-title uppercase centered space-bottom">Adventure Awaits You</h2>
 
-            <div>
-                <figure>
-                    <img src="images/adventurous-1.jpg" alt="Zambezi River">
-                    <figcaption>Zambezi River</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventurous-2.jpg" alt="Bali Ubud">
-                    <figcaption>Bali Ubud</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventurous-3.jpg" alt="Zambezi River Gorge">
-                    <figcaption>Zambezi River Gorge</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventurous-4.jpg" alt="Colorado River">
-                    <figcaption>Colorado River</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/adventurous-5.jpg" alt="Deschutes River">
-                    <figcaption>Deschutes River</figcaption>
-                </figure>
+            <div class="gridded gridded-five gapped-default">
+                <div class="card">
+                    <figure>
+                        <img src="images/adventurous-1.jpg" alt="Zambezi River">
+                        <figcaption>Zambezi River</figcaption>
+                    </figure>
+                    <a class="act-link" href="trips.html">Book now</a>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/adventurous-2.jpg" alt="Bali Ubud">
+                        <figcaption>Bali Ubud</figcaption>
+                    </figure>
+                    <a class="act-link" href="trips.html">Book now</a>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/adventurous-3.jpg" alt="Zambezi River Gorge">
+                        <figcaption>Zambezi River Gorge</figcaption>
+                    </figure>
+                    <a class="act-link" href="trips.html">Book now</a>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/adventurous-4.jpg" alt="Colorado River">
+                        <figcaption>Colorado River</figcaption>
+                    </figure>
+                    <a class="act-link" href="trips.html">Book now</a>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="images/adventurous-5.jpg" alt="Deschutes River">
+                        <figcaption>Deschutes River</figcaption>
+                    </figure>
+                    <a class="act-link" href="trips.html">Book now</a>
+                </div>
             </div>
         </section>
     </main>
+    <!-- Footer section -->
     <footer>
-        <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
+        <div class="content gridded gridded-one padding-all">
+            <p>&copy; 2026 | White Water Rafting | Samuel dos Santos</p>
 
-        <nav class="socialmedia">
-            <ul>
-                <li><a href="https://facebook.com">
-                        <img src="images/facebook-icon.jpg" alt="Facebook Icon">
-                    </a></li>
-                <li><a href="https://linkedin.com">
-                        <img src="images/linkedin-icon.jpg" alt="LinkedIn Icon">
-                    </a></li>
-                <li><a href="https://instagram.com">
-                        <img src="images/instagram-icon.jpg" alt="Instagram Icon">
-                    </a></li>
-            </ul>
-        </nav>
+            <nav class="socialmedia">
+                <ul>
+                    <li><a href="https://facebook.com">
+                            <img src="images/icons/facebook.svg" alt="Facebook Icon">
+                        </a></li>
+                    <li><a href="https://linkedin.com">
+                            <img src="images/icons/linkedin.svg" alt="LinkedIn Icon">
+                        </a></li>
+                    <li><a href="https://instagram.com">
+                            <img src="images/icons/instagram.svg" alt="Instagram Icon">
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 
