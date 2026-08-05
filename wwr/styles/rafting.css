@@ -100,7 +100,7 @@
     top: 0;
     width: 100%;
     padding: 16px;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     z-index: 1;
 }
 
