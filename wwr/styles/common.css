@@ -111,3 +111,7 @@ footer p {
 footer img {
     width: 25px;
 }
+
+.socialmedia a {
+    text-decoration: none;
+}
