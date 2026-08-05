@@ -1,39 +1,68 @@
-/* 
- ************ Home page *************
- ************************************
-*/
+/* ==========================================================================
+   GLOBAL UTILITIES & BUTTONS
+   ========================================================================== */
+.locations article,
+.locations figure,
+.locations figcaption,
+.locations img,
+.locations a,
+.info article a,
+.newsletter button,
+.form-actions > button {
+    transition: all ease-in-out var(--default-transition-time);
+}
+
+.info article a,
+.newsletter button,
+.form-actions > button {
+    background-color: var(--accent1-color);
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 18px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.info article a:hover,
+.newsletter button:hover,
+.form-actions > button:hover {
+    background-color: var(--accent2-color);
+    color: #212121;
+}
+
+.adventurous figcaption,
+.team figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    text-align: center;
+    font-size: .876em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+
 #page-home header {
     background-color: #fff;
-    position: relative;
-}
-
-#page-home header:before,
-#page-home header:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 110%;
-    height: 100%;
-    background-color: #fff;
-}
-
-#page-home header:after {
-    right: -110%;
-}
-
-#page-home header:before {
-    left: -110%;
 }
 
 .page-home .hero {
     height: 650px;
+    position: relative;
 }
 
 .page-home .hero > div {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    inset: 0;
     max-height: 850px;
     overflow: hidden;
     z-index: -1;
@@ -42,6 +71,7 @@
 .page-home .hero img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .page-home > .hero h1 {
@@ -86,7 +116,6 @@
     height: 100%;
     overflow: hidden;
     border: 4px solid var(--accent2-color);
-    transition: all ease-in-out var(--default-transition-time);
 }
 
 .locations article:hover {
@@ -94,14 +123,10 @@
 }
 
 .locations article:hover img {
-    transform: scale(1.5);
+    transform: scale(1.15);
 }
 
-.locations article:hover figcaption {
-    background-color: var(--accent1-color);
-    color: #ffffff;
-}
-
+.locations article:hover figcaption,
 .locations article:hover a {
     background-color: var(--accent1-color);
     color: #fff;
@@ -110,7 +135,6 @@
 .locations figure {
     overflow: hidden;
     position: relative;
-    transition: all ease-in-out var(--default-transition-time);
     height: 100%;
 }
 
@@ -121,18 +145,13 @@
     background-color: var(--accent2-color);
     color: #414141;
     padding: 4px 8px;
-    text-align: center;
-    font-weight: 400;
-    transition: all ease-in-out var(--default-transition-time);
     font-size: .76em;
 }
 
 .locations img {
     width: 100%;
     height: 100%;
-    transition: all ease-in-out var(--default-transition-time);
     object-fit: cover;
-    z-index: -1;
 }
 
 .locations a {
@@ -140,13 +159,8 @@
     padding: 12px 16px;
     color: #fff;
     text-align: center;
-    width: 100%;
-    display: grid;
-    place-self: end;
-    align-self: self-end;
-    position: relative;
-    z-index: 1;
-    transition: all ease-in-out var(--default-transition-time);
+    display: block;
+    margin-top: auto;
 }
 
 .locations a:hover {
@@ -159,25 +173,6 @@
     background-color: #eee;
     padding: 80px 0;
     margin-top: 80px;
-    position: relative;
-}
-
-.info:after,
-.info:before {
-    content: '';
-    background-color: #eee;
-    top: 0;
-    width: 110%;
-    height: 100%;
-    position: absolute;
-}
-
-.info:after {
-    right: -110%;
-}
-
-.info:before {
-    left: -110%;
 }
 
 .info > .content {
@@ -189,8 +184,6 @@
 .info figure {
     grid-column: 1 / 7;
     grid-row: 1;
-    width: 100%;
-    height: auto;
     margin-left: -50px;
 }
 
@@ -212,7 +205,6 @@
 }
 
 .info article h2 {
-    color: #212121;
     font-size: 2rem;
     margin-bottom: 20px;
 }
@@ -220,21 +212,6 @@
 .info article p {
     color: #444;
     line-height: 1.8;
-}
-
-.info article a {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 14px 18px;
-    background-color: var(--accent1-color);
-    color: #fff;
-    font-weight: 600;
-    transition: all ease-in-out var(--default-transition-time);
-}
-
-.info article a:hover {
-    background-color: var(--accent2-color);
-    color: #212121;
 }
 
 /* Newsletter section */
@@ -246,7 +223,6 @@
 
 .newsletter header {
     text-align: center;
-    display: block;
 }
 
 .newsletter h3 {
@@ -262,27 +238,19 @@
 .newsletter form {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
-    margin-top: 20px;
+    margin: 20px auto 0;
     gap: 20px;
     max-width: 700px;
     align-items: end;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.newsletter .form-input label {
-    display: block;
-    margin-bottom: 5px;
 }
 
 .newsletter .form-input {
     display: flex;
     flex-direction: column;
-    align-items: start;
 }
 
-.newsletter .form-input:not(:last-child) {
-    margin-bottom: 0;
+.newsletter .form-input label {
+    margin-bottom: 5px;
 }
 
 .newsletter .form-input input {
@@ -293,26 +261,10 @@
     border: 1px solid #ddd;
 }
 
-.newsletter button {
-    display: inline-block;
-    padding: 14px 18px;
-    background-color: var(--accent1-color);
-    color: #fff;
-    font-weight: 600;
-    transition: all ease-in-out var(--default-transition-time);
-    border: none;
-}
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
 
-.newsletter button:hover {
-    background-color: var(--accent2-color);
-    color: #212121;
-    cursor: pointer;
-}
-
-/* 
- ************ About page ************
- ************************************
-*/
 .page-about .hero {
     position: relative;
     margin-top: 10px;
@@ -321,7 +273,6 @@
 .page-about .hero img {
     display: block;
     width: 100%;
-    height: auto;
 }
 
 .page-about .hero article {
@@ -337,7 +288,6 @@
 .page-about .hero article img {
     width: 100%;
     max-width: 150px;
-    height: fit-content;
     object-fit: cover;
     float: right;
     padding-left: 20px;
@@ -363,7 +313,6 @@
 
 /* History section */
 .history {
-    padding: 0;
     margin: 24px 0;
 }
 
@@ -379,19 +328,7 @@
     margin: 0 auto;
 }
 
-.history h2 {
-    text-align: center;
-    margin-top: 20px;
-    color: #414141;
-    text-transform: uppercase;
-}
-
-.history p {
-    color: #666666;
-    font-size: .876em;
-}
-
-/* Adventurous section */
+.history h2,
 .adventurous h2 {
     text-align: center;
     margin-bottom: 20px;
@@ -399,47 +336,41 @@
     text-transform: uppercase;
 }
 
+.history p {
+    color: #666;
+    font-size: .876em;
+}
+
+/* Adventurous section */
 .adventurous > div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
-.adventurous figure {
+.adventurous figure,
+.team figure {
     overflow: hidden;
     width: 100%;
-    height: 100%;
-    max-width: 250px;
-    max-height: 180px;
     position: relative;
 }
 
-.adventurous img {
+.adventurous figure {
+    max-width: 250px;
+    max-height: 180px;
+}
+
+.adventurous img,
+.team img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.adventurous figcaption {
-    text-align: center;
-    font-size: .876em;
-    margin-top: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: var(--accent1-color);
-    color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+/* ==========================================================================
+   CONTACT PAGE
+   ========================================================================== */
 
-/* 
- *********** Contact page ***********
- ************************************
-*/
 .page-contact {
     margin-top: 20px;
 }
@@ -458,7 +389,6 @@ address {
 }
 
 address p {
-    padding: 0;
     margin: 0;
 }
 
@@ -480,6 +410,7 @@ address p {
     grid-template-columns: 1fr 3fr;
     align-items: center;
     line-height: 1.6;
+    margin-bottom: 16px;
 }
 
 .form-input.message {
@@ -492,31 +423,23 @@ address p {
     gap: 8px;
 }
 
+.radio-options label,
+.checkbox-group label,
+.form-input.radio-group p,
+.form-input > label {
+    font-size: 0.876em;
+    color: #313132;
+}
+
 .radio-options label {
     display: flex;
     align-items: center;
-    width: fit-content;
     gap: 8px;
     cursor: pointer;
-    font-size: 0.876em;
-    font-weight: normal;
-}
-
-.form-input:not(:last-child) {
-    margin-bottom: 16px;
-}
-
-.form-input.radio-group p,
-.form-input > label {
-    margin-bottom: 2px;
-    font-size: 0.876em;
-    font-weight: normal;
-    color: #313132;
 }
 
 .form-input.radio-group p {
     margin: 0 0 6px 0;
-    padding: 0;
 }
 
 .form-input > input,
@@ -534,29 +457,15 @@ address p {
     gap: 8px;
 }
 
-.checkbox-group label {
-    font-size: .876em;
-}
-
 .form-actions {
     margin-top: 16px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .form-actions > button {
     width: 100%;
     padding: 10px 20px;
-    border: none;
-    background-color: var(--accent1-color);
-    color: #ffffff;
-    cursor: pointer;
-    transition: all ease-in-out var(--default-transition-time);
-}
-
-.form-actions > button:hover {
-    background-color: var(--accent2-color);
-    color: #212121;
 }
 
 /* Team section */
@@ -582,32 +491,7 @@ address p {
     gap: 3rem;
 }
 
-.team img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .team figure {
-    overflow: hidden;
-    width: 100%;
     max-width: 250px;
     height: 250px;
-    position: relative;
-}
-
-.team figcaption {
-    text-align: center;
-    font-size: .876em;
-    margin-top: 4px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: var(--accent1-color);
-    color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
