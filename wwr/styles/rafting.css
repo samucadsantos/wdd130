@@ -125,7 +125,7 @@
     right: 0;
     padding: 10px;
     background-color: var(--accent1-color);
-    color: white;
+    color: #fff;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
