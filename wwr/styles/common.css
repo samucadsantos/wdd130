@@ -5,6 +5,7 @@
     --accent2-color: #e9c46a;
     --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     --body-font: Arial, Helvetica, sans-serif;
+    --default-transition-time: .3s;
 }
 
 ::selection {
@@ -57,7 +58,7 @@ header a {
     text-decoration: none;
     color: var(--accent1-color);
     font-weight: 600;
-    transition: color ease-in-out .2s;
+    transition: color ease-in-out var(--default-transition-time);
 }
 
 header a:hover {
